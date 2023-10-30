@@ -9,6 +9,13 @@
 }
 
 /*
+    utility
+*/
+.grey{
+    background-color: grey;
+}
+
+/*
     GENERAL
 */
 
@@ -18,7 +25,7 @@ html{
 }
 
 .container{
-    max-width:1200px;
+    max-width:1000px;
     width:100%;
     margin:0 auto;
     display:flex;
@@ -61,6 +68,11 @@ html{
     min-height: 400px;
     background-color:pink;
 }
+.content-green{
+    width:100%;
+    min-height: 800px;
+    background-color:green;
+}
 
 /*
     DEBUG
@@ -77,8 +89,8 @@ html{
 }
 
 .section-main{
-    min-height: 600px;
-    background-color:grey;
+    min-height: 400px;
+    padding:10px;
 }
 .bordo{
     border:1px dashed black
