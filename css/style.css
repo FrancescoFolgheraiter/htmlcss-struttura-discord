@@ -8,141 +8,175 @@
     box-sizing: border-box;
 }
 
-/*
-    utility
-*/
-.grey{
-    background-color: grey;
-}
-
-/*
-    GENERAL
-*/
-
-
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
     max-width:1000px;
-    width:100%;
     margin:0 auto;
 }
 
-.flex-center{
-    display:flex;
-    justify-content:center;
-    align-items: center;
+.container-small{
+    max-width:800px;
+    margin:0 auto;
 }
 
-.flex-start{
-    display:flex;
-    justify-content:flex-start;
-    align-items: center;
+.my-row{
+    display: flex;
+    flex-wrap:wrap;
 }
-.flex-between{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
+
+.my-col-1-6{
+    width:calc((100% / 6) * 1);
+}
+
+.my-col-2-3{
+    width:calc((100% / 6) * 4);
+}
+
+.my-col-3-4{
+    width:calc((100% / 4) * 3);
+}
+.my-col-1-4{
+    width:calc((100% / 4) * 1);
 }
 
 /*
     HEADER
 */
 
-
-.logo, .login{
-    width:25%;
-    background-color: orange;
+.header-top{
+    padding:10px 0;
 }
-.link{
-    width:50%;
-    background-color: orange;
+.header-top .main-menu-container > *{
+    padding:10px 0;
 }
-
-.container-pink{
-    max-width:800px;
-    width:100%;
-    margin:0 auto;
-    background-color: palevioletred;
-    min-height: 380px;
+.header-top .main-menu-container > .main-nav{
+    text-align: center;
 }
 
-/*
-    main
-*/
-.content-blu{
-    width:70%;
-    min-height: 400px;
-    background-color: #007fff;
-}
-.content-pink{
-    width:30%;
-    min-height: 400px;
-    background-color:pink;
-}
-.content-green{
-    width:100%;
-    min-height: 800px;
-    background-color:green;
+.header-top .main-menu-container > .main-nav ul li{
+    display:inline-block
 }
 
+
+.header-top .main-menu-container > .login-container{
+    text-align:right;
+}
+
+.header-bottom{
+    padding:50px 0;
+}
 
 /*
-    footer
+    MAIN
 */
-
-.footer-top{
-    padding:10px;
-    min-height: 300px;
-    background-color:rgb(26, 26, 26);
-}
-.footer-pink{
-    background-color:palevioletred;
-    min-height: 280px;
-    width:33%;
+.my-col-3-5{
+    width: calc((100% / 5) * 3);
 }
 
-.footer-blu{
-    background-color:aqua;
-    min-height: 280px; 
-    width:67%;
+.my-col-2-5{
+    width: calc((100% / 5) * 2);
 }
-.footer-blu>*{
-    width:25%;
-    min-height:280px;
+.main-section-row{
+    padding:40px 0;
+}
+/*
+    FOOTER
+*/
+footer{
+    padding-top:5px;
+    background-color: #23272a;
 }
 
-.footer-bot{
-    padding:10px;
-    min-height: 100px;
-    background-color:rgb(26, 26, 26);
-    border-top:1px solid grey ;
-    border-bottom:1px solid grey ;
+.header-top{
+    padding:20px 0;
 }
-.footer-bot>*{
-    background-color:aqua;
-    min-height: 50px;
+.footer-top hr{
+    margin-top:10px;
+    margin-bottom:10px;
 }
+
+.footer-bottom .sing-container{
+    display:flex;
+    justify-content: space-between;
+
+    padding:20px 0;
+}
+
 /*
     DEBUG
 */
-.sfondo-top-header{
-    min-height: 50px;
-    background-color: rgb(76, 171, 248);
-    padding:10px;
+.debug .header-top{
+    height:60px;
+    background-color: #ADD8E6;
 }
-.sfondo-bot-header{
-    min-height: 400px;
-    background-color: rgb(0, 0, 250);
-    padding:10px;
+.debug .header-top .my-row{
+    background-color:goldenrod;
 }
 
-.section-main{
-    min-height: 400px;
-    padding:10px;
+.debug .header-top .my-row > *{
+    border: 1px dashed black;
 }
-.bordo{
-    border:1px dashed black
+
+.debug .header-bottom{
+    background-color:blue
+}
+
+.debug .header-bottom .jumbotron{
+    background-color:fuchsia;
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug main section .my-col-3-5{
+    background-color: #ADD8E6;
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+.debug main section .my-col-2-5{
+    background-color: pink;
+    border: 1px dashed black;
+    min-height: 400px;
+}
+
+main > section:nth-child(even){
+    background-color: grey;
+}
+
+.debug main section .big-green{
+    background-color: green;
+    border: 1px dashed black;
+    min-height: 600px;
+}
+
+.debug .footer-top-main-row >*{
+    border: 1px dashed black;
+}
+
+.debug .footer-top-main-row > .my-col-1-4{
+    background-color: pink;
+    min-height: 400px;
+}
+
+.debug .footer-top-main-row .my-col-3-4{
+    background-color: aqua;
+    min-height: 400px;
+}
+
+.debug .footer-top-main-row .my-col-3-4 .my-row>.my-col-1-4{
+  border:1px dashed white;
+  min-height: 400px;
+}
+.debug .sing-container{
+    background-color: aquamarine;
+    border: 1px dashed black;
+}
+
+.debug .sing-container > *{
+    background-color: pink;
+    border:1px dashed black;
+    padding:10px;
 }
